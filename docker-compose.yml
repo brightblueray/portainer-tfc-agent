@@ -5,4 +5,5 @@ services:
     environment: 
       - TFC_AGENT_TOKEN=${TFC_AGENT_TOKEN}
       - TFC_AGENT_NAME=${TFC_AGENT_NAME}
-    
+      - TFC_AGENT_LOG_LEVEL=debug
+      
