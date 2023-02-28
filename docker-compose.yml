@@ -7,3 +7,9 @@ services:
       - TFC_AGENT_NAME=${TFC_AGENT_NAME}
       - TFC_AGENT_LOG_LEVEL=${TFC_AGENT_LOG_LEVEL}
       # - TFC_AGENT_DATA_DIR=${TFC_AGENT_DATA_DIR}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+networks:
+  default:
+    external:
+      name: ${NETWORK}
